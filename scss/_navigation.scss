@@ -1,0 +1,25 @@
+.navigation {
+    background-color: $primary-grey;
+    display: flex;
+    align-items: center;
+    & ul {
+        display: flex;
+        justify-content: space-around;
+        flex: 2;
+        margin: 0;
+        & li {
+            list-style: none;
+            & a {
+                padding: 15px 30px;
+                display: inline-block;
+                color: #fff;
+                text-decoration: none;
+                transition: 0.1s linear;
+            }
+            & a:hover {
+                color: $primary-grey;
+                background-color: $primary-faded-grey;
+            }
+        }
+    }
+}

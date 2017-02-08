@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    padding-top: 5px;
+    & > div {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        &:nth-child(2) {
+            justify-content: flex-end;
+        }
+    }
+    & img {
+        color: #ffbe58;
+    }
+    & label {
+        width: 100px;
+        height: 35px;
+        background-color: #4caf50;
+        color: #ffffff;
+        font-size: 13px;
+        margin: 0 15px;
+        padding: 5px;
+        @include border-top-right-radius(5px); 
+        @include border-bottom-right-radius(5px);
+    }
+}
+
+.fa {
+    color: #000000;
+    font-size: 24px;
+ }
+
+.button {
+    color: #ffffff;
+    background-color: $brand-brown;
+    padding: 3px 15px;
+    border: none;
+    @include border-radius(50px);
+    &:hover {
+        cursor: pointer;
+    }
+}

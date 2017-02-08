@@ -1,0 +1,47 @@
+@import 'normalize';
+@import 'var';
+@import 'mixins';
+@import 'header';
+@import 'navigation';
+@import 'main_content';
+@import 'footer';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto; 
+    margin-bottom: -50px;
+}
+
+.content-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+ .push, footer {
+    height: 50px;
+ }
+
+ p{
+    margin: 0; 
+ }
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+h4 {
+    margin: 5px 0;
+}
