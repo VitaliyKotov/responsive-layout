@@ -21,7 +21,7 @@
     border-left: 1px solid $primary-faded-grey;
 }
 
-.thumb {
+.item-info > div {
     min-height: 165px;
     margin-top: 5px;
 }
@@ -46,6 +46,20 @@
             float: right;
             text-decoration: none;
             color: $brand-brown;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .item-info,
+    .promo {
+        flex-wrap: wrap;
+        & > div {
+            flex: 1;
+            min-width: 100%;
+        }
+        & > div:nth-child(2) {
+            margin-top: 5px;
         }
     }
 }
