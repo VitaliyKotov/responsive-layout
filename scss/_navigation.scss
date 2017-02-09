@@ -22,4 +22,23 @@
             }
         }
     }
+    .burger-menu,
+    .menu-btn {
+        display: none;
+
+    }
+}
+
+.close-menu-btn,
+.menu-btn {
+    text-decoration: none;
+    color: #fff;
+}
+
+.close-menu-btn {
+    padding-left: 40px;
+}
+
+.nav-wrapper {
+    display: flex;
 }
